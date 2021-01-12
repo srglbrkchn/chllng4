@@ -50,6 +50,7 @@ body {
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 2px 1px 30px hsl(270, 7%, 64%);
 }
 
 .app-container {
@@ -270,15 +271,14 @@ body {
 
   .container {
     flex-direction: column;
-    margin-top: 70px;
     margin: 100px auto 150px;
+    width: inherit;
   }
 
   .feature {
     text-align: center;
     width: 280px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px 0 auto auto;
   }
 
   .title {
@@ -293,13 +293,13 @@ body {
   }
 
   .purple-sqr {
-    right: 45%;
+    right: 50%;
     top: -15%;
   }
 
   .whiteish-sqr {
     left: 20rem;
-    top: 35rem;
+    top: 30rem;
     height: 35rem;
   }
 
@@ -307,6 +307,7 @@ body {
       flex-direction: column;
       width: 360px;
       max-width: 360px;
+      min-width: 360px;
       margin:auto;
     }
   }
