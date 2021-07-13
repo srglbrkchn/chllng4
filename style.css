@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 .mom {
@@ -15,8 +14,9 @@ body {
   width: 30rem;
   height: 45rem;
   z-index: -1;
-  position: absolute;
+  position:fixed;
   right:69.8%;
+  top: 0;
   border-radius: 0 0 350px 350px;
 }
 
@@ -26,15 +26,14 @@ body {
   height: 45rem;
   z-index: -1;
   border-radius: 350px 350px 0 0;
-  position: absolute;
+  position: fixed;
   left: 80%;
   top: 15%;
 }
-
 .container {
   display: flex;
   width: 65%;
-  margin: 140px 0 80px 330px ;
+  margin: 140px 0 80px 330px;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -151,7 +150,8 @@ body {
 }
 
 .dog-img {
-  width: 15%;
+  width: 3rem;
+  height: 3rem;
   border-radius: 10px;
   margin: 2px 6px;
 }
@@ -268,7 +268,6 @@ body {
 
 /* Media Break Point */
 @media only screen and (max-width:900px) {
-
   .container {
     flex-direction: column;
     margin: 100px auto 150px;
@@ -303,11 +302,11 @@ body {
     height: 35rem;
   }
 
-    .mom {
-      flex-direction: column;
-      width: 360px;
-      max-width: 360px;
-      min-width: 360px;
-      margin:auto;
-    }
+  .mom {
+    flex-direction: column;
+    width: 360px;
+    max-width: 360px;
+    min-width: 360px;
+    margin: auto;
   }
+}
